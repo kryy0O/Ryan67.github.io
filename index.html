@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My First Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <!-- Tailwind CSS for modern styling and layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styling to match the crisp borders of the requested example */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 16px;
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-   <h1>Kyaw Zin Khant</h1>
-   <p>s1133584</p>
+<body class="bg-white min-h-screen p-6">
+
+    <!-- Container matching the top-left alignment from the reference image -->
+    <div class="inline-block">
+        <table>
+            <thead>
+                <tr>
+                    <th class="font-bold">Name</th>
+                    <th class="font-bold">Student ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>張守忠</td>
+                    <td>1133584</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
