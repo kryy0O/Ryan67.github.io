@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Information</title>
-    <!-- Tailwind CSS for modern styling and layout -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Custom styling to match the crisp borders of the requested example */
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
@@ -32,18 +30,15 @@
             margin-bottom: 30px;
             padding: 8px 12px;
         }
-        /* 1: red double border + light blue gradient */
         .box1 {
             border: 8px double #e8553e;
             background: linear-gradient(to right, #bfe6f2, #c9c6f2);
         }
-        /* 2: yellow background + thin blue border + rounded corners */
         .box2 {
             background: #ffe81a;
             border: 3px solid #2a8fd6;
             border-radius: 14px;
         }
-        /* 3: green background + gray dotted border */
         .box3 {
             background: #5cc46a;
             border: 10px dotted #888;
@@ -77,6 +72,27 @@
             margin: 20px 0;
             text-align: right;
             text-decoration: underline;
+        }
+
+        /* ===== Exercise 13 ===== */
+        .ex13 {
+            font-family: "Times New Roman", Times, serif;
+            margin-top: 30px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin-bottom: 30px;
+            padding: 4px;
+            transition: width 2s, height 2s;
+        }
+        .sq1:hover {
+            width: 600px;
+        }
+        .sq2:hover {
+            width: 140px;
+            height: 140px;
         }
     </style>
 </head>
@@ -113,17 +129,12 @@
         <h2>This is heading 2</h2>
         <h3>This is heading 3</h3>
     </div>
-    
-.square {
-  width: 100px; height: 100px;
-  background: pink;
-  transition: width 2s, height 2s;
-}
-.sq1:hover { width: 600px; }               /* longer */
-.sq2:hover { width: 140px; height: 140px; } /* larger */
 
+    <!-- Exercise 13 -->
+    <div class="ex13">
+        <div class="square sq1">1</div>
+        <div class="square sq2">2</div>
+    </div>
 
 </body>
 </html>
-
-
